@@ -21,6 +21,7 @@ export default function Parallax({ heading, image, children, evenClasses }) {
       controls.start({
         opacity: 1,
         y: 0,
+        scale: 1,
       });
     }
   }, [inView, controls]);
@@ -28,7 +29,7 @@ export default function Parallax({ heading, image, children, evenClasses }) {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0, y: -50, scale: 0.8 }}
       animate={controls}
       className="relative overflow-hidden"
     >
