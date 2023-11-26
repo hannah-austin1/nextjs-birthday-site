@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Parallax({ heading, image, children, evenClasses }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
   });
 
   // const parallaxVariants = {
