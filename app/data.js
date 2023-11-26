@@ -17,11 +17,11 @@ export const data = [
   },
   {
     heading: "And while today you're 31, and we've started feeling old",
-    image: "/pic7.jpg",
+    image: "/pic7.JPG",
   },
   {
     heading: "I don't ever think the drama of our lives will be told",
-    image: "/pic5.jpg",
+    image: "/pic5.JPG",
   },
   {
     heading:
@@ -30,6 +30,6 @@ export const data = [
   },
   {
     heading: "I hope you enjoyed these memories, love the Robin to my Batman",
-    image: "/pic4.jpg",
+    image: "/pic4.JPG",
   },
 ];
