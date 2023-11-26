@@ -37,12 +37,12 @@ export default function Parallax({ heading, image, children, evenClasses }) {
         <motion.h1 className="text-white font-serif text-4xl z-10">
           {heading}
         </motion.h1>
-        <div className="w-2/3 z-10 rounded relative">
+        <div className="w-2/3 z-10 rounded relative flex-shrink-0">
           <Image
             src={image}
             alt={heading}
             layout="fill"
-            className="opacity-75 h-1/3 object-contain rounded"
+            className="opacity-75 rounded aspect-w-3 aspect-h-2 sm:aspect-w-16 sm:aspect-h-9 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-16 lg:aspect-h-9 xl:aspect-w-16 xl:aspect-h-9"
           />
         </div>
       </div>
