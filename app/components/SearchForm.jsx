@@ -31,16 +31,23 @@ export default function SearchForm() {
   };
 
   return (
-    <>
-      <form className="flex mb-8 w-9/12" onSubmit={handleSubmit}>
+    <div className="flex flex-row bg-twilight-blue h-screen">
+      <form
+        className="mb-8 w-1/2 h-6 mx-auto flex flex-col items-center justify-center self-center"
+        onSubmit={handleSubmit}
+      >
+        <h1 className="text-white font-serif text-4xl z-10">Dani hAIKit</h1>
+        <p className="text-white font-serif text-2xl z-10">
+          You can be anything you want to be
+        </p>
         <input
-          className="w-full p-4 bg-white border border-white rounded text-base mr-4"
+          className="w-1/3 p-4 mt-4 bg-white border border-white rounded text-base mr-4"
           type="text"
           value={inputValue}
           onChange={handleChange}
         />
         <button
-          className="p-4 bg-dusty-rose rounded box-border cursor-pointer text-base"
+          className="p-4 mt-4 w-1/5 bg-night-noir text-white rounded box-border cursor-pointer text-base"
           disabled={loading}
           type="submit"
         >
@@ -48,7 +55,7 @@ export default function SearchForm() {
         </button>
       </form>
 
-      <div className="h-[45rem] w-[30rem] p-4 bg-twilight-blue">
+      <div className="w-1/2 p-4 h-  bg-twilight-blue">
         {loading ? (
           <LoadingSkeleton />
         ) : (
@@ -60,6 +67,6 @@ export default function SearchForm() {
           />
         )}
       </div>
-    </>
+    </div>
   );
 }

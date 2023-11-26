@@ -16,6 +16,7 @@ export default function Home() {
       {/* </div> */}
       <main>
         <>
+          <Search />
           {data.map((item, index) => {
             const isEven = index % 2 === 0;
             const evenClasses = isEven
@@ -32,7 +33,6 @@ export default function Home() {
             );
           })}
         </>
-        <Search />
       </main>
     </div>
   );

@@ -33,14 +33,16 @@ export default function Parallax({ heading, image, children, evenClasses }) {
       className="relative overflow-hidden"
     >
       <div className={`${evenClasses} w-full h-screen flex`}>
-        <motion.h1 className="text-white text-4xl z-10">{heading}</motion.h1>
-        <div className="w-2/3 z-10">
+        <motion.h1 className="text-white font-serif text-4xl z-10">
+          {heading}
+        </motion.h1>
+        <div className="w-2/3 z-10 rounded">
           <Image
             src={image}
             alt={heading}
             height={600}
             width={600}
-            className="opacity-75 h-1/3 object-contain"
+            className="opacity-75 h-1/3 object-contain rounded"
           />
         </div>
       </div>
