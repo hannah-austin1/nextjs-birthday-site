@@ -33,7 +33,7 @@ export default function Parallax({ heading, image, children, evenClasses }) {
       animate={controls}
       className="relative overflow-hidden"
     >
-      <div className={`${evenClasses} w-full h-screen flex`}>
+      <div className={`${evenClasses} w-full h-screen flex p-6`}>
         <motion.h1 className="text-white font-serif text-4xl z-10">
           {heading}
         </motion.h1>
